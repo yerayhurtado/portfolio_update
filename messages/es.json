@@ -1,0 +1,114 @@
+{
+    "Navigation": {
+        "about": "Sobre mí",
+        "journey": "Trayectoria",
+        "projects": "Proyectos",
+        "stack": "Arsenal"
+    },
+
+    "Hero": {
+        "card":"Disponible para nuevos proyectos",
+    "description": "Especialista en Agentes de IA, Machine Learning y Soluciones Web Escalables.",
+    "cta1": "Explorar Proyectos",
+    "cta2": "Contactame"
+    },
+
+    
+  "About": {
+    "title": "Sobre mí",
+    "description": "Soy un <important>especialista en IA y Data Science</important> en formación con una sólida base como Desarrollador Full Stack. Mi enfoque principal es la <cyan>automatización de procesos</cyan> y el desarrollo de <important>Agentes Autónomos</important> para resolver problemas complejos de negocio.",
+    "highlights": {
+      "ai": {
+        "title": "IA Predictiva",
+        "desc": "Modelado de datos para anticipar tendencias y comportamientos."
+      },
+      "dev": {
+        "title": "Arquitectura Full Stack",
+        "desc": "Especialista en Next.js, React y ecosistemas escalables."
+      },
+      "goal": {
+        "title": "Automatización Inteligente",
+        "desc": "Reducción de fricción operativa mediante agentes LangGraph."
+      }
+    }
+  },
+
+
+  "Experience": {
+    "title": "Trayectoria Profesional",
+    "jobs": {
+        "tfm": {
+        "role": "TFM – Desarrollo de Agentes de IA Autónomos",
+        "date": "Actualidad",
+        "description": "Desarrollo avanzado de IA en Aceleralia enfocado en la creación de sistemas multi-agente con LangGraph. Implementación de lógicas de control cíclicas y persistencia de estados para la automatización de procesos complejos mediante agentes especializados."
+      },
+      "webDev": {
+        "role": "Desarrollador Web (Prácticas)",
+        "description": "Desarrollo de soluciones web escalables usando React, Next.js y Tailwind CSS en entornos Agile Scrum. Enfocado en la modularidad de componentes y optimización de rendimiento."
+      },
+      "itTech": {
+        "role": "Helpdesk / Técnico IT",
+        "description": "Gestión de resolución de incidencias de hardware/software y resolución de problemas de red. Garantizando la continuidad operativa a través de soporte técnico proactivo."
+      }
+    }
+  },
+
+  "Projects": {
+    "title": "Proyectos Seleccionados",
+    "items": {
+      "futsight": {
+        "description": "Plataforma inteligente que utiliza modelos de mezcla gaussiana (GMM) para la segmentación probabilística de jugadores y análisis de scouting."
+      },
+      "taskpilot": {
+        "description": "Agente inteligente capaz de planificar y ejecutar tareas complejas utilizando máquinas de estado de LangGraph."
+      },
+      "fitness": {
+        "description": "Plataforma de e-commerce para equipos de fitness con inventario en tiempo real, sistema de reservas y pagos seguros."
+      },
+      "raco": {
+        "description": "Landing page elegante para restaurante que muestra menú, ubicación e información de contacto con un diseño moderno."
+      }
+    }
+  },
+  
+  "Skills": {
+    "title": "Arsenal Técnico",
+    "subtitle": "Tecnologías y herramientas especializadas.",
+    "categories": {
+      "all": "Todos"
+    }
+  },
+
+  "Contact": {
+    "eyebrow": "Contacto",
+    "title": "Construyamos algo",
+    "subtitle": "Cuéntame qué quieres automatizar, escalar o mejorar y te responderé con una propuesta honesta y directa.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "¿Cómo te llamas?",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "message": "Proyecto o idea",
+      "messagePlaceholder": "Contexto, objetivo y cualquier detalle relevante…",
+      "submit": "Enviar mensaje"
+    },
+    "helper": "Responderé personalmente a cada mensaje. Intenta darme contexto para que pueda ayudarte mejor.",
+    "success": "Mensaje enviado correctamente. Te responderé lo antes posible.",
+    "error": "Ha habido un problema al enviar el mensaje. Prueba de nuevo en unos minutos o escríbeme directamente al correo.",
+    "direct": {
+      "title": "Contacto directo",
+      "social": "También puedes encontrarme en"
+    }
+  },
+
+  "Navigation": {
+    "about": "Sobre mí",
+    "journey": "Trayectoria",
+    "projects": "Proyectos",
+    "stack": "Arsenal",
+    "contact": "Contacto",
+    "cv": "Descargar CV",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  }
+}

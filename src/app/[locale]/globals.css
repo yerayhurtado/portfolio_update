@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* Nota: Las fuentes se gestionan desde layout.tsx usando next/font 
+  para evitar errores de parsing y mejorar el rendimiento.
+*/
+
+:root {
+  --background: #121212;
+  --foreground: #ededed;
+  --accent: #00D4FF;
+  --accent-glow: rgba(0, 212, 255, 0.15);
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  
+  /* Colores para el scrollbar */
+  --scrollbar-track: #0a0a0a;
+  --scrollbar-thumb: #333333;
+}
+
+@theme inline {
+  /* Sincronización con las variables de next/font definidas en layout.tsx */
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  /* Colores del tema */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  
+  /* Animaciones personalizadas */
+  --animate-soft-pulse: soft-pulse 8s ease-in-out infinite;
+}
+
+/* --- Estilos Base --- */
+@layer base {
+  * {
+    @apply border-white/5 scroll-smooth;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    @apply antialiased selection:bg-accent selection:text-background overflow-x-hidden;
+  }
+}
+
+/* --- Componentes de Interfaz --- */
+@layer components {
+  /* Panel con efecto cristal (Glassmorphism) */
+  .glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    @apply transition-all duration-300 rounded-2xl;
+  }
+
+  /* Navegación fluida */
+  .glass-nav {
+    background: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--glass-border);
+  }
+
+  /* Texto con degradado elegante */
+  .gradient-text {
+    background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Texto con degradado de acento (IA Feel) */
+  .accent-gradient-text {
+    background: linear-gradient(135deg, #ffffff 30%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Botón primario estilo Yeray */
+  .btn-primary {
+    @apply px-8 py-4 bg-accent text-black font-bold rounded-xl 
+           hover:scale-105 hover:shadow-[0_0_30px_rgba(0,212,255,0.3)] 
+           active:scale-95 transition-all duration-300;
+  }
+}
+
+/* --- Animaciones Keyframes --- */
+@keyframes soft-pulse {
+  0%, 100% { opacity: 0.08; transform: scale(1); }
+  50% { opacity: 0.15; transform: scale(1.05); }
+}
+
+/* --- Personalización de Scrollbar --- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* --- Soporte para Navegadores sin Webkit --- */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}

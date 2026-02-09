@@ -1,0 +1,105 @@
+{
+  "Navigation": {
+    "about": "About",
+    "journey": "Journey",
+    "projects": "Projects",
+    "stack": "Stack",
+    "contact": "Contact",
+    "cv": "Download CV",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+
+  "Hero": {
+    "card": "Available for new projects",
+    "description": "Specialist in AI Agents, Machine Learning and scalable web solutions.",
+    "cta1": "Explore Projects",
+    "cta2": "Contact Me"
+  },
+
+  "About": {
+    "title": "About me",
+    "description": "I’m a <important>AI and Data Science specialist</important> in training with a solid background as a Full Stack Developer. My main focus is <cyan>process automation</cyan> and building <important>Autonomous Agents</important> to solve complex business problems.",
+    "highlights": {
+      "ai": {
+        "title": "Predictive AI",
+        "desc": "Data modelling to anticipate trends and behaviours."
+      },
+      "dev": {
+        "title": "Full Stack Architecture",
+        "desc": "Specialist in Next.js, React and scalable ecosystems."
+      },
+      "goal": {
+        "title": "Intelligent Automation",
+        "desc": "Reducing operational friction through LangGraph agents."
+      }
+    }
+  },
+
+  "Experience": {
+    "title": "Professional Journey",
+    "jobs": {
+      "tfm": {
+        "role": "Master's Thesis – Autonomous AI Agents Development",
+        "date": "Present",
+        "description": "Advanced AI development at Aceleralia focused on creating multi-agent systems using LangGraph. Implementation of cyclic control logic and state persistence for automating complex processes through specialized agents."
+      },
+      "webDev": {
+        "role": "Web Developer (Intern)",
+        "description": "Developed scalable web solutions using React, Next.js, and Tailwind CSS within Agile Scrum environments. Focused on component modularity and performance optimization."
+      },
+      "itTech": {
+        "role": "Helpdesk / IT Technician",
+        "description": "Managed hardware/software incident resolution and network troubleshooting. Ensured operational continuity through proactive technical support."
+      }
+    }
+  },
+
+  "Projects": {
+    "title": "Selected Projects",
+    "items": {
+      "futsight": {
+        "description": "Intelligent platform that uses Gaussian Mixture Models (GMM) for probabilistic player segmentation and scouting analysis."
+      },
+      "taskpilot": {
+        "description": "Smart agent capable of planning and executing complex tasks using LangGraph state machines."
+      },
+      "fitness": {
+        "description": "E‑commerce platform for fitness equipment with real‑time inventory, booking system and secure payments."
+      },
+      "raco": {
+        "description": "Elegant restaurant landing page showcasing menu, location and contact information with a modern design."
+      }
+    }
+  },
+
+  "Skills": {
+    "title": "Tech Arsenal",
+    "subtitle": "Specialised technologies and tools.",
+    "categories": {
+      "all": "All"
+    }
+  },
+
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Let’s build something",
+    "subtitle": "Tell me what you want to automate, scale or improve and I’ll get back to you with an honest and direct proposal.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "What should I call you?",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "message": "Project or idea",
+      "messagePlaceholder": "Context, goal and any relevant detail…",
+      "submit": "Send message"
+    },
+    "helper": "I personally read every message. Give me some context so I can help you better.",
+    "success": "Message sent successfully. I’ll get back to you as soon as possible.",
+    "error": "There was a problem sending your message. Please try again in a few minutes or email me directly.",
+    "direct": {
+      "title": "Direct contact",
+      "social": "You can also find me on"
+    }
+  }
+}
