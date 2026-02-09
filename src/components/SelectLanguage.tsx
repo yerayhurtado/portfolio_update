@@ -54,14 +54,14 @@ export const SelectLanguage = () => {
       {/* Botón Principal */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-3 px-3 py-2 rounded-xl bg-white/[0.03] border border-white/10 text-xs font-medium text-zinc-400 hover:text-white hover:bg-white/[0.08] transition-all backdrop-blur-md"
+        className="flex items-center gap-3 px-3 py-2 rounded-xl bg-white/3 border border-white/10 text-xs font-medium text-zinc-400 hover:text-white hover:bg-white/8 transition-all backdrop-blur-md"
       >
         <div className="flex items-center gap-2">
           {/* Bandera con imagen para asegurar visualización */}
           <img 
             src={activeLanguage.flag} 
             alt={activeLanguage.label}
-            className="w-4 h-3 object-cover rounded-[2px] shadow-sm"
+            className="w-4 h-3 object-cover rounded-xs shadow-sm"
           />
           <span className="uppercase tracking-widest font-mono">{currentLocale}</span>
         </div>
@@ -95,7 +95,7 @@ export const SelectLanguage = () => {
                   <img 
                     src={lang.flag} 
                     alt={lang.label}
-                    className="w-5 h-3.5 object-cover rounded-[2px]"
+                    className="w-5 h-3.5 object-cover rounded-xs"
                   />
                   <span className="flex-1 text-left font-medium">{lang.label}</span>
                   
