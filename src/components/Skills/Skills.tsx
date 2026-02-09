@@ -93,7 +93,6 @@ export default function SkillsSection() {
 
   return (
     <section id="stack" className="py-24 px-6 bg-[#121212] relative overflow-hidden">
-      <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-[#00D4FF]/5 rounded-full blur-[128px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
