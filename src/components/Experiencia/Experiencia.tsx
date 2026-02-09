@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 // Importamos todo de una sola librería
 import { LuHistory, LuNetwork } from "react-icons/lu"; // Lucide
@@ -9,7 +9,7 @@ export default function Experiencia() {
   const t = useTranslations('Experience');
 
   // Variantes para la animación de entrada
-  const containerVariants = {
+  const containerVariants : Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -17,7 +17,7 @@ export default function Experiencia() {
     }
   };
 
-  const cardVariants = {
+  const cardVariants : Variants = {
     hidden: { opacity: 0, x: -20, filter: "blur(5px)" },
     visible: { 
       opacity: 1, 

@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useState } from 'react';
 import { useTranslations } from "next-intl";
 import { 
   LuBinary, LuLayoutList, LuServer, 
-  LuDatabase, LuPalette, LuGitBranch, LuChartPie, LuBrainCircuit, LuNetwork 
+  LuDatabase, LuPalette, LuGitBranch, LuChartPie, LuBrainCircuit,  
 } from 'react-icons/lu';
 import { 
   SiReact, SiNextdotjs, SiTailwindcss, SiPython, 
@@ -72,7 +73,7 @@ export default function SkillsSection() {
     ? skills 
     : skills.filter(skill => skill.category === activeCategory);
 
-  const containerVariants = {
+  const containerVariants : Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -80,7 +81,7 @@ export default function SkillsSection() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants : Variants = {
     hidden: { opacity: 0, scale: 0.9, filter: "blur(4px)" },
     visible: { 
       opacity: 1, 

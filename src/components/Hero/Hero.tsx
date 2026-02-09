@@ -7,7 +7,7 @@ export default function Hero() {
   const t = useTranslations('Hero');  
   
   return (
-    <section className="min-h-[100dvh] flex flex-col justify-center items-center px-4 md:px-6 py-20 relative overflow-hidden">
+    <section className="min-h-dvh flex flex-col justify-center items-center px-4 md:px-6 py-20 relative overflow-hidden">
       {/* Círculo decorativo: Ajustado para no causar scroll horizontal en móviles */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 md:left-1/4 w-64 h-64 md:w-96 md:h-96 bg-[#00D4FF] rounded-full mix-blend-screen filter blur-[80px] md:blur-[128px] opacity-[0.08] animate-pulse pointer-events-none"></div>
         
