@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { LuUser, LuBrain, LuCode, LuRocket } from "react-icons/lu";
 export default function About() {
@@ -13,7 +13,7 @@ export default function About() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20, filter: "blur(4px)" },
     visible: { 
       opacity: 1, 
@@ -26,7 +26,7 @@ export default function About() {
   return (
     <section id="about" className="py-24 px-6 bg-[#121212] relative overflow-hidden">
       {/* Decoración de fondo sutil */}
-      <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-[#00D4FF]/5 rounded-full blur-[100px] -z-10" />
+      <div className="absolute top-0 right-0 w-75 h-75 bg-[#00D4FF]/5 rounded-full blur-[100px] -z-10" />
 
       <motion.div 
         initial="hidden"
